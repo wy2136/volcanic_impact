@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "/tigress/wenchang/miniconda3/lib/python3.6/site-packages/xarray/core/dataset.py", line 780, in _construct_dataarray
+    variable = self._variables[name]
+KeyError: 'netrad_top'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get.py", line 13, in <module>
+    get_volc_data(expname=expname, compname=compname, dataname=dataname, ens=ens)
+  File "/tigress/wenchang/analysis/volcano_noleap/wylib.py", line 27, in get_volc_data
+    da = ds[dataname]
+  File "/tigress/wenchang/miniconda3/lib/python3.6/site-packages/xarray/core/dataset.py", line 880, in __getitem__
+    return self._construct_dataarray(key)
+  File "/tigress/wenchang/miniconda3/lib/python3.6/site-packages/xarray/core/dataset.py", line 783, in _construct_dataarray
+    self._variables, name, self._level_coords, self.dims)
+  File "/tigress/wenchang/miniconda3/lib/python3.6/site-packages/xarray/core/dataset.py", line 73, in _get_virtual_variable
+    ref_var = variables[ref_name]
+KeyError: 'netrad_top'
+Traceback (most recent call last):
+  File "./get.py", line 13, in <module>
+    get_volc_data(expname=expname, compname=compname, dataname=dataname, ens=ens)
+  File "/tigress/wenchang/analysis/volcano_noleap/wylib.py", line 29, in get_volc_data
+    dae = xr.concat(das, pd.Index(ens, name='en'))
+NameError: name 'pd' is not defined
+Created: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+Created: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+Created: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+Created: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+Created: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+Created: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+Created: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+Created: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+Created: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+	Exists: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+	Exists: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+	Exists: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+	Exists: data/Agung_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+	Exists: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+	Exists: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+	Exists: data/StMaria_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+	Exists: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.netrad_toa.nc
+	Exists: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.t_surf.nc
+	Exists: data/Pinatubo_ens_noleap_nudgeclimo_all_model1860.atmos_month.precip.nc
+Created: data/Agung_PI_ens_noleap.atmos_month.netrad_toa.nc
+Created: data/Agung_PI_ens_noleap.atmos_month.t_surf.nc
+Created: data/Agung_PI_ens_noleap.atmos_month.precip.nc
+Created: data/StMaria_PI_ens_noleap.atmos_month.netrad_toa.nc
+Created: data/StMaria_PI_ens_noleap.atmos_month.t_surf.nc
+Created: data/StMaria_PI_ens_noleap.atmos_month.precip.nc
+Created: data/Pinatubo_PI_ens_noleap.atmos_month.netrad_toa.nc
+Created: data/Pinatubo_PI_ens_noleap.atmos_month.t_surf.nc
+Created: data/Pinatubo_PI_ens_noleap.atmos_month.precip.nc
