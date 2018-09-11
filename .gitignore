@@ -3,7 +3,8 @@ data/
 cache/
 OLD/
 *.DS_Store
-#figs
+#figs/
+papers/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
