@@ -6,5 +6,6 @@ ifiles=/tigress/wenchang/MODEL_OUT/$expname/POSTP/????0101.$otype.nc
 #dataname=$1 #precip
 ofile=data/$1.$expname.$otype.nc
 
+echo "ncrcat -v $1 $ifiles $ofile"
 ncrcat -v $1 $ifiles $ofile
 
