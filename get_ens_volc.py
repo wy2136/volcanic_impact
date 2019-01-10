@@ -5,7 +5,8 @@ from itertools import product
 
 
 expnames = [f'{volc}_PI_ens_noleap' 
-    for volc in ('Agung', 'StMaria', 'Pinatubo')]
+    for volc in ('Chichon',)]
+#    for volc in ('Agung', 'StMaria', 'Pinatubo')]
 compname = 'atmos_month'
 datanames = ['netrad_toa', 't_surf', 'precip']
 ens = range(1, 31)
